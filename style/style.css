@@ -1,0 +1,204 @@
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  border-collapse: collapse;
+  color: #000000;
+}
+caption {
+  padding: 8px;
+  color: white;
+  background: #8FD4C1;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+
+th {
+  border-bottom: 3px solid #B9B29F;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background: white;
+}
+
+tr:nth-child(even) {
+  background: #E8E6D1;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #f8f8f8;
+  margin: 0px;
+}
+
+
+.Overlay {
+	width:100%;
+    height:100%;
+
+    background-color:rgba(0,0,0,0.5);
+
+    position:fixed;
+    top:0px;
+    left:0px;
+
+    z-index:10;
+	overflow: auto;
+}
+
+.Overlay-table-form {
+	width:100%;
+    height:100%;
+
+    background-color:rgba(0,0,0,0.5);
+
+    position:fixed;
+    top:0px;
+    left:0px;
+
+    z-index:10;
+	overflow: auto;
+}
+
+hr.menu {
+	margin-top: 40px;
+}
+
+.top-menu {
+	position: sticky;
+  	top: 0%;
+	background: white;
+	height: 75px;
+    padding-top: 1px;
+}
+
+.bottom-menu {
+	position: sticky;
+  	bottom: 0%;
+	background: white;
+	height: 50px;
+    padding-top: 1px;
+}
+
+.ul-menu-top {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top: 25px; /*делаем отступ сверху*/
+  padding-top: 10;
+}
+
+.ul-menu-bottom {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:5px; /*делаем отступ сверху*/
+}
+
+.li-menu {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  padding-left: 5px; /*Добавляем отступ у пунктов меню*/
+  margin-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-reg {
+  max-width: 320px;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #fff;
+  font-size: 13px;
+}
+
+input,select {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  
+  border: 1px solid #ccc;
+  
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.btn-menu {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#30A8E6; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:10px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  border-radius:4px; /*добавляем скругление*/
+  border: thin;
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+
+.btn-menu:hover {
+	background:#1C85BB;/*добавляем эффект при наведении*/
+}
+
+
+
+#btn-form {
+	display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border: 0;
+    background-color: #30A8E6;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    color: #fff;
+}
+
+#btn-form:hover {
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #1C85BB;
+}
+
+#btn-close {
+	background-color: #d12c2c;
+	margin-left: 91%;
+	color: white;
+	border-color: white;
+}
+
+#btn-close:hover {
+	background-color: #c40606;
+}
+
+#btn-table-close {
+	background-color: #d12c2c;
+	margin-left: 91%;
+	color: white;
+	border-color: white;
+}
+
+#btn-table-close:hover {
+	background-color: #c40606;
+}
+
+.table-element {
+	
+}
+
+.table-element > input {
+	color: green;
+}

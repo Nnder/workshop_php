@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Registration</title>
+	<meta charset="utf-8">
+	 <style>
+	  body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 320px;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  
+  border: 1px solid #ccc;
+  
+  font-family: inherit;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  
+  border: 0;
+  background-color: #1cbc11;
+  cursor: pointer;
+  
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+}
+button:hover {
+  background-color: #14a20a;
+}
+	  </style>
+  </head>
+  <body>
+
+<!--name article	analog_id	count	price-zakup	price-opt	price-roznica	image_name image_content -->
+
+	<form method="post" action="registrUser.php" name="signin-form" enctype="multipart/form-data">
+    <div class="form-element">
+    <label>Название</label>
+    <input type="text" name="name" required>
+  </div>
+  <div class="form-element">
+    <label>Артикл</label>
+    <input type="text" name="article"/>
+  </div>
+	
+  <div class="form-element">
+    <label>Аналог</label>
+    <input type="text" name="analog_id" required />
+  </div>
+  <div class="form-element">
+    <label>Кол-во</label>
+    <input type="text" name="count" required />
+  </div>
+
+  <div class="form-element">
+    <label>Цена закуки</label>
+    <input type="text" name="price_zakup" required />
+  </div>
+
+  <div class="form-element">
+    <label>Цена опт</label>
+    <input type="text" name="price_opt" required />
+  </div>
+
+  <div class="form-element">
+    <label>Цена розн</label>
+    <input type="text" name="price_roznica" required />
+  </div>
+
+  <div class="form-element">
+    <label>Фото</label>
+    <input type="file"name="myimage">
+  </div>
+  
+  <button type="submit" name="registration_user" value="registration_user">Зарегистрировать</button>
+</form>
+
+  </body>
+</html>
